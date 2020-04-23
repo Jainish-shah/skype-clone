@@ -1,0 +1,9 @@
+when SmileyButton -> Tapped
+    if EmojiPicker -> Visible
+        then EmojiPicker -> Hidden && Keyboard -> Visible ( In other words, the textfield gains focus )
+
+    if EmojiPicker -> Hidden
+        then EmojiPicker -> Visible && Keyboard -> Hidden
+
+when textfield -> Tapped
+    then EmojiPicker -> Hidden

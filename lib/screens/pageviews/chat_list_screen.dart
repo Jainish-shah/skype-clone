@@ -15,7 +15,7 @@ final FirebaseRepository _repository = FirebaseRepository();
 
 class _ChatListScreenState extends State<ChatListScreen> {
   String currentUserId;
-  String initials;
+  String initials=" ";
   
   @override
   void initState() {
@@ -92,11 +92,13 @@ class _ChatListContainerState extends State<ChatListContainer> {
             mini: false,
             onTap: () {},
             title: Text(
-              "The Programmer JAinish",
+              "The Programmer Jainish",
               style: TextStyle(
                 color: Colors.white,fontFamily:  "Arial", fontSize: 19),
             ),
-            subtitle: Text("Hello", style: TextStyle(
+            subtitle: Text(
+              "Hello", 
+              style: TextStyle(
               color: UniversalVariables.greyColor, fontSize: 14,
               ),
             ),

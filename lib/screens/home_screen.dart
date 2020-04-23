@@ -31,7 +31,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-
     double _labelFontSize = 10;
 
     return Scaffold(
@@ -52,7 +51,8 @@ class _HomeScreenState extends State<HomeScreen> {
           child: CupertinoTabBar(
             backgroundColor: UniversalVariables.blackColor,
             items: <BottomNavigationBarItem>[
-              BottomNavigationBarItem(icon: Icon(Icons.chat,
+              BottomNavigationBarItem(
+                icon: Icon(Icons.chat,
                   color: (_page == 0)
                   ? UniversalVariables.lightBlueColor 
                   : UniversalVariables.greyColor),
@@ -65,10 +65,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       : Colors.grey),
                     ),  
                   ),
-                  BottomNavigationBarItem(icon: Icon(Icons.call,
-                  color: (_page == 1)
-                  ? UniversalVariables.lightBlueColor 
-                  : UniversalVariables.greyColor),
+                  BottomNavigationBarItem(
+                    icon: Icon(Icons.call,
+                    color: (_page == 1)
+                        ? UniversalVariables.lightBlueColor 
+                        : UniversalVariables.greyColor),
                   title: Text(
                     "Calls",
                     style: TextStyle(
@@ -78,17 +79,18 @@ class _HomeScreenState extends State<HomeScreen> {
                       : Colors.grey),
                     ),
                   ),
-                  BottomNavigationBarItem(icon: Icon(Icons.contact_phone,
-                  color: (_page == 2)
-                  ? UniversalVariables.lightBlueColor 
-                  : UniversalVariables.greyColor),
+                  BottomNavigationBarItem(
+                    icon: Icon(Icons.contact_phone,
+                    color: (_page == 2)
+                      ? UniversalVariables.lightBlueColor 
+                      : UniversalVariables.greyColor),
                   title: Text(
                     "Contacts",
                     style: TextStyle(
                       fontSize: _labelFontSize,
                       color: (_page == 2) 
-                      ? UniversalVariables.lightBlueColor 
-                      : Colors.grey),                                                            
+                          ? UniversalVariables.lightBlueColor 
+                          : Colors.grey),                                                            
                     ),
                   ),
                 ],

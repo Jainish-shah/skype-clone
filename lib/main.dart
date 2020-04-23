@@ -1,10 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+//import 'package:skype_clone/resources/firebase_methods.dart';
 import 'package:skpye_clone/resources/firebase_repository.dart';
 import 'package:skpye_clone/screens/home_screen.dart';
 import 'package:skpye_clone/screens/login_screen.dart';
 import 'package:skpye_clone/screens/search_screen.dart';
+//import 'package:skype_clone/utils/utilities.dart';
 
 void main() => runApp(MyApp());
 

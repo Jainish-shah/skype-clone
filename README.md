@@ -1,6 +1,6 @@
 # skpye_clone
 
-A new Flutter project.
+Using the flutter framework, I tried to clone the skype app and its features. Database - Firebase
 
 ## Getting Started
 
